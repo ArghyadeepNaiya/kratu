@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Mazezilla_EN-US0859018469_1366x768.jpg);
+    text-align: center;
+
+}
+.label{
+    font-size: 55px;
+    font-weight: 400;
+    border: 1px;
+    background-color: transparent;
+    font-family: sans-serif;
+    padding: 10px 0 10px 0;
+    margin: 10% ;
+    animation: code 2s ease-in;
+}
+label{
+    background: linear-gradient(to right,white 20%,grey 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.user{
+    border: transparent;
+    background: transparent;
+}
+
+.user input{
+    border: transparent;
+    background:rgba(255, 255, 255, 0.664);
+    height: 30px;
+    padding:10px 0 10px;
+    color:black;
+    font-size: medium;
+    width:250px;
+    font-family: sans-serif;
+
+}
+.password{
+    border: transparent;
+    background: transparent;
+}
+.password input{
+    border: none;
+    background:rgba(255,255,255,0.664);
+    height: 30px;
+    padding: 0%;
+    color: black;
+    font-size: medium;
+    width: 250px;
+    font-family: sans-serif;
+}
+@keyframes code{
+    0%{
+        opacity: 0.1;
+        transform: translate(-120px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
