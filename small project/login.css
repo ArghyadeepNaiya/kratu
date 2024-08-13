@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    text-align: center;
+}
+body{
+    overflow: hidden;
+}
+section{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,white,lightblue);
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(3){
+    bottom: -150px;
+    left: 0;
+    width: 850px;
+    height: 600px;
+    background: rgba(166, 255, 131, 0.837);
+}
+section .color:nth-child(2){
+    bottom: 50px;
+    right: 0px;
+    width: 700px;
+    height: 450px;
+    background:rgb(34, 160, 243);
+}
+section .color:nth-child(1){
+    top: 0px;
+    left: 50px;
+    width: 600px;
+    height: 700px;
+    background:violet;
+}
+.login-box{
+    text-align: center;
+    animation: code 2s ease-out;
+    margin-top: 0;
+    position: relative;
+    width: 400px;
+    min-height: 500px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px 10px rgba(0,0,0,0.444);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+.login{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.login label{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.username{
+    display:inline-flex;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+.username input{
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    background: rgba(0,0,0,0.2);
+    color: azure;
+    height: 30px;
+    width: 230px;
+    justify-content: center;
+}
+.password{
+    display:inline-flex;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.password input{
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: rgba(0,0,0,0.2);
+    color: azure;
+    height: 30px;
+    width: 230px;
+    justify-content: center;
+}
+.fpass{
+    position: absolute;
+    right: 35%;
+}
+.fpass a{
+    text-decoration: none;
+    color: rgb(122, 101, 255);
+}
+.submit button{
+    margin-top: 60px;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color:rgb(112, 141, 172);
+    border-bottom: none;
+    border-top: none;
+    border:thin solid white;
+    outline:none;
+    width: 25%;
+    cursor: pointer;
+    color: aliceblue;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+}
+.newlog{
+    padding: 50px;
+    font-size: 15px;
+    font-weight: 537;
+}
+.newlog a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.back{
+    padding: 60px;
+    margin-bottom: 2px;
+}
+.back button{
+    border-top:none ;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 20px;
+    outline:none;
+    width:100px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 2px 2px 2px rgba(255,255,255,0.3);
+}
+.back button a{
+    font-size: 12px;
+    font-weight: 550;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+@keyframes code{
+    0%{
+        opacity: 0.3;
+        transform: translate(-120px);
+    }
+    50%{
+        opacity: 0.7;
+        transform: translate(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
